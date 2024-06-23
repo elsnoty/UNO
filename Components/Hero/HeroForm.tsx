@@ -9,7 +9,7 @@ const HeroForm = () => {
         <input type="text" placeholder='Enter Your Name' className='border focus:outline-[#5d62ee] p-3'/>
       <input type="text" placeholder='Enter Your Email' className='border focus:outline-[#5d62ee] p-3'/>
       <input type="number" placeholder='Enter Your Number' className='border focus:outline-[#5d62ee] p-3'/>
-        <button className='bg-custom-color text-white p-3'>SUBMIT MESSAGE</button>
+        <button className='bg-custom-color text-white p-3 hover:scale-95 duration-100 ease-linear'>SUBMIT MESSAGE</button>
         </div>
     </form>
   )
