@@ -25,7 +25,7 @@ const TopCompany: React.FC = () => {
           <FontAwesomeIcon icon={faPlay} className='play-icon' size='2xl'/>
         </div>
       </div>
-      <div className='flex-col flex gap-y-5 lg:w-[800px]'>
+      <div className='flex-col flex gap-y-5 lg:w-[800px] pb-5 pl-2'>
         <h3 className='font-Poppins text-gray-500 py-3 font-bold'>OUR COMPANY</h3>
         <h1 className='font-syne font-bold text-4xl'>Creator of quality designs and thinker of fresh ideas.</h1>
         <p className='font-syne'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 

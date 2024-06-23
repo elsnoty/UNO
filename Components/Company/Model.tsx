@@ -16,7 +16,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, videoUrl }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
       <div className="relative bg-white p-4 rounded-lg w-[80%] h-[80%]">
         <button className="absolute -top-10 -right-5 m-2 text-red-500" onClick={onClose}><FontAwesomeIcon icon={faXmark} size='2xl'/></button>
-        <ReactPlayer url={videoUrl} width="100%" height="100%"/>
+        <ReactPlayer url={videoUrl} controls width="100%" height="100%"/>
       </div>
     </div>
   );

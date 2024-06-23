@@ -26,10 +26,10 @@ const Pricing = () => {
                 <div key={index} className={`flex-col flex font-syne relative bg-white shadow-2xl p-5 gap-y-5 rounded-lg
                  ${index === 1 && "bg-gradient-to-tr from-[#5cc2ed66] via-[#5d62ee66] to-[#c298d366]"}`}>
                     <div className='flex gap-3 items-start pt-5'>
-                    <div className=' text-gradient font-bold text-4xl '>
+                    <div className=' text-gradient font-bold text-5xl '>
                         {value.price}$
                     </div>
-                    <h3 className='rounded-full border p-1'>{value.plan}</h3>
+                    <h3 className={`rounded-full border p-1 font-medium ${index === 1 && "text-white"}`}>{value.plan}</h3>
                     </div>
                     <h1 className='font-bold text-4xl'>{value.type}</h1>
                     <hr />
@@ -39,8 +39,8 @@ const Pricing = () => {
                     <h3 className='flex items-center gap-3 text-lg'><Image src={check} alt='check' width={16}/>{value.inf3o}</h3>
                     <h3 className='flex items-center gap-3 text-lg'><Image src={check} alt='check' width={16}/>{value.inf4o}</h3>
                     </div>
-                    <button className="text-red text-center align-middle hover:before:bg-redborder-red-500 relative h-[50px] w-40 overflow-hidden border bg-white px-3 text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-custom-color before:transition-all before:duration-500 
-                    hover:text-white hover:shadow-white hover:before:left-0 hover:before:w-full"><span className="relative z-[1] text-center align-middle">Let’s Talk</span></button>
+                    <button className={`text-red text-center align-middle hover:before:bg-redborder-red-500 relative h-[50px] w-40 overflow-hidden border bg-white px-3 text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0  before:transition-all before:duration-500 
+                    hover:text-white hover:shadow-white hover:before:left-0 hover:before:w-full ${index === 1 ? "before:bg-custom-color" : "before:bg-gray-900"}`}><span className="relative z-[1] text-center align-middle">Let’s Talk</span></button>
                     </div>
             ))
         }
