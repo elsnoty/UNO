@@ -2,7 +2,7 @@ import React from 'react';
 
 const Touch = () => {
   return (
-    <div className='bg-[#f2f9ff] py-10 px-4 md:px-10 h-full w-full'>
+    <div className='bg-[#f2f9ff] py-10 px-4 md:px-10 h-full w-full' id='OurContact'>
       <div className='font-syne font-bold text-center'>
         <h3>GET IN TOUCH</h3>
         <h1 className='text-4xl'>Let’s work together</h1>

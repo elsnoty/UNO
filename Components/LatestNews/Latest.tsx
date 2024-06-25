@@ -38,7 +38,7 @@ const news: LatestNews[] = [
 
 const Latest = () => {
     return (
-        <div className='px-24 py-10 max-xl:px-3'>
+        <div className='px-24 py-10 max-xl:px-3' id='OurNews'>
             <div className='font-syne font-bold text-center'>
                 <h3>LASTEST NEWS</h3>
                 <h1 className='text-4xl'>Thoughts and experiments</h1>

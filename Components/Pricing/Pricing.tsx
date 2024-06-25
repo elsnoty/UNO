@@ -15,7 +15,7 @@ interface Pricing {
 
 const Pricing = () => {
   return (
-    <div className='px-24 py-8 max-xl:px-10 max-sm:px-5'>
+    <div className='px-24 py-8 max-xl:px-10 max-sm:px-5' id='OurPricing'>
       <div className='font-syne font-bold text-center'>
         <h3>PRICING PLANS</h3>
         <h1 className='text-4xl'>Let’s find the perfect plan</h1>

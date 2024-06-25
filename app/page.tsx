@@ -1,5 +1,7 @@
 import Brands from "@/Components/Brands/Brands";
 import Company from "@/Components/Company/Company";
+import COPYRight from "@/Components/COPYRight";
+import Footer from "@/Components/Footer/Footer";
 import Hero from "@/Components/Hero/Hero";
 import Latest from "@/Components/LatestNews/Latest";
 import NavBar from "@/Components/navBar/NavBar";
@@ -20,6 +22,8 @@ export default function Home() {
       <Brands />
       <Latest />
       <Touch />
+      <Footer />
+      <COPYRight />
     </div>
   );
 }

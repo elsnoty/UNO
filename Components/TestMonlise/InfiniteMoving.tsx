@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-screen bg-center rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden px-10" 
+    <div className="h-screen bg-center bg-no-repeat rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden px-10" id="OurReviews"
     style={{backgroundImage: `url(${testmonlise.src})`}}>
       <div className="font-bold font-syne flex flex-wrap justify-between items-center pb-10 w-full">
         <div className="max-w-lg">

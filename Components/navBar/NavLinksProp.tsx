@@ -1,18 +1,14 @@
-import React, { MouseEventHandler, ReactNode } from 'react';
-
+import React from 'react';
 interface Links {
   text?: string;
   className: string;
-  onMouseEnter?: MouseEventHandler<HTMLAnchorElement>;
-  onMouseLeave?: MouseEventHandler<HTMLAnchorElement>;
-  children?: ReactNode;
+  href?: string;
 }
 
 const NavLinksProp = (props: Links) => {
   return (
-    <a className={props.className} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave}>
+    <a className={props.className} href={props.href}>
       {props.text}
-      {props.children}
     </a>
   );
 };

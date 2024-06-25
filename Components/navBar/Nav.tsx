@@ -30,8 +30,11 @@ const Nav = () => {
 
   return (
     <nav className={`flex items-center justify-between fixed w-full px-24 py-4 max-xl:px-10 max-sm:px-5 transition-colors duration-300 
-    ${isScrolled ? 'bg-white text-black' : 'bg-transparent text-white'}`}>
-      <Image src={logo} alt='Logo' className='cursor-pointer'/>
+    ${isScrolled ? 'bg-gradient-to-r from-blue-200 via-purple-200 to-purple-300 text-black' : 'bg-transparent text-white'}
+`}>
+      <a href="#">
+      <Image src={logo} alt='Logo' className='cursor-pointer' />
+      </a>
       <div className='max-lg:hidden'>
         <NavLinks />
       </div>

@@ -14,7 +14,7 @@ interface Service {
 
 const OurService = () => {
   return (
-    <div className='px-24 py-10 max-xl:px-10 flex flex-col items-center max-sm:px-5'>
+    <div id='OurServices' className='px-24 py-10 max-xl:px-10 flex flex-col items-center max-sm:px-5'>
       <div className='text-center'>
         <p className='font-bold font-Poppins text-gray-500 py-3'>OUR SERVICES</p>
         <h1 className='font-bold text-4xl font-syne'>We’re a creative agency. Ask us about distinctive branding</h1>
@@ -25,9 +25,9 @@ const OurService = () => {
             <div key={value.id} className={`relative overflow-hidden border
             ${index === 1 ? 'bg-custom-color text-white' : 'bg-white'} shadow-2xl transition-all before:absolute before:bottom-0 
             before:left-0 before:top-0 before:z-0 before:h-full before:w-0 
-            ${index === 1 ? 'before:bg-white' : 'before:bg-custom-color'} before:transition-all before:duration-500 
-            hover:text-white hover:shadow-white hover:before:left-0 hover:before:w-full 
-            hover:before:${index === 1 ? 'bg-white !text-black' : 'bg-custom-color'}`}>
+            ${index === 1 ? 'before:bg-white hover:text-black' : 'before:bg-custom-color hover:text-white'} before:transition-all before:duration-500 
+           hover:shadow-white hover:before:left-0 hover:before:w-full 
+            hover:before:${index === 1 ? ' text-black' : 'bg-custom-color'}`}>
               <div className='flex flex-col gap-y-5 items-center justify-center text-center font-syne p-3 h-[500px] z-[1] relative'>
                 <div>
                   <Image src={value.image} alt='serviceImg' />

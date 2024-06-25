@@ -4,7 +4,7 @@ import BottomCompany from './BottomCompany'
 
 const Company = () => {
   return (
-    <div className='py-10'>
+    <div className='py-10' id='OurCompany'>
         <TopCompany />
         <BottomCompany />
     </div>
